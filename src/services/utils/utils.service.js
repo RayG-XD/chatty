@@ -1,5 +1,6 @@
 import { addNotification, clearNotification } from '@redux/reducers/notifications/notification.reducer';
 import { addUser, clearUser } from '@redux/reducers/user/user.reducer';
+import { APP_ENVIRONMENT } from '@services/axios';
 import { avatarColors } from '@services/utils/static.data';
 import { floor, random, some, findIndex } from 'lodash';
 import millify from 'millify';
@@ -52,10 +53,11 @@ export class Utils {
   }
 
   static appEnvironment() {
-    const env = process.env.REACT_APP_ENVIRONMENT;
-    if (env === 'development') {
+    if (APP_ENVIRONMENT === 'local') {
+      return 'LOCAL';
+    } else if (APP_ENVIRONMENT === 'development') {
       return 'DEV';
-    } else if (env === 'staging') {
+    } else if (APP_ENVIRONMENT === 'staging') {
       return 'STG';
     }
   }
@@ -130,6 +132,12 @@ export class Utils {
 
   static getImage(imageId, imageVersion) {
     return imageId && imageVersion ? this.appImageUrl(imageVersion, imageId) : '';
+  }
+
+  static getVideo(videoId, videoVersion) {
+    return videoId && videoVersion
+      ? `https://res.cloudinary.com/ddp4qz0zm/video/upload/v${videoVersion}/${videoId}`
+      : '';
   }
 
   static removeUserFromList(list, userId) {
