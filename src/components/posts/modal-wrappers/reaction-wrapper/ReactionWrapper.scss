@@ -7,7 +7,7 @@
   display: grid;
   grid-template-columns: 1;
   grid-auto-rows: 1fr;
-  grid-template-areas: "modal";
+  grid-template-areas: 'modal';
 
   .modal-bg {
     width: 100vw;
@@ -40,7 +40,7 @@
 
     &-header {
       display: grid;
-      grid-template-areas: ". button";
+      grid-template-areas: '. button';
       grid-template-columns: 1fr 36px;
       grid-template-rows: 1fr;
       height: 40px;

@@ -14,7 +14,10 @@
     opacity: 0;
     visibility: hidden;
     transform: translateY(-20px);
-    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+    transition:
+      opacity 0.4s ease,
+      transform 0.4s ease,
+      visibility 0.4s;
   }
 
   .menu.active {
@@ -31,7 +34,7 @@
   .menu li {
     border-bottom: 1px solid var(--white-16);
     display: grid;
-    grid-template-areas: "icon text";
+    grid-template-areas: 'icon text';
     grid-template-rows: 1fr;
     grid-template-columns: 30px 1fr;
     cursor: pointer;

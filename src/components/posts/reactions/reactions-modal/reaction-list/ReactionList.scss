@@ -4,7 +4,7 @@
 
   &-list {
     display: grid;
-    grid-template-areas: "img name . follow";
+    grid-template-areas: 'img name . follow';
     grid-template-columns: 50px auto 1fr 100px;
     grid-template-rows: 1fr;
     margin-bottom: 20px;

@@ -1,9 +1,9 @@
 .conversation-container {
   display: grid;
   grid:
-    "conversation-header"
-    "search-container"
-    "conversation-list";
+    'conversation-header'
+    'search-container'
+    'conversation-list';
 
   &-header {
     grid-area: conversation-header;
@@ -51,7 +51,9 @@
       border-radius: 10px;
       outline: medium none;
       overflow: visible;
-      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      transition:
+        border-color 0.15s ease-in-out,
+        box-shadow 0.15s ease-in-out;
     }
 
     .search {

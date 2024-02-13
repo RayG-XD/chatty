@@ -39,7 +39,7 @@
 
         &-display {
           display: grid;
-          grid-template-areas: "img comment";
+          grid-template-areas: 'img comment';
           grid-template-columns: 50px 1fr;
           grid-template-rows: 1fr;
 

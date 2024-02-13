@@ -5,7 +5,9 @@
   background-color: var(--white-1);
   height: auto;
   border-radius: 16px;
-  box-shadow: rgb(145 158 171 / 20%) 0 0 2px 0, rgb(145 158 171 / 12%) 0 12px 24px -4px;
+  box-shadow:
+    rgb(145 158 171 / 20%) 0 0 2px 0,
+    rgb(145 158 171 / 12%) 0 12px 24px -4px;
 
   .user-post-data-wrap {
     background-color: var(--white-1);
@@ -38,7 +40,7 @@
 
       .inline-title-display {
         display: grid;
-        grid-template-areas: "name . . icons";
+        grid-template-areas: 'name . . icons';
         grid-template-columns: auto 1fr 1fr 100px;
         grid-template-rows: 1fr;
 

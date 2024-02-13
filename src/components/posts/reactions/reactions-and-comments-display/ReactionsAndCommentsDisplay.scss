@@ -2,7 +2,7 @@
   padding: 10px 0;
   border-bottom: 1px solid var(--white-4);
   display: grid;
-  grid-template-areas: "reaction comment";
+  grid-template-areas: 'reaction comment';
   grid-template-columns: max-content 1fr;
   grid-template-rows: 1fr;
 
@@ -84,7 +84,7 @@
 
     .likes-block {
       display: grid;
-      grid-template-areas: "reactions-icon-display reactions-count";
+      grid-template-areas: 'reactions-icon-display reactions-count';
       grid-template-columns: max-content 1fr;
       grid-template-rows: 1fr;
       cursor: pointer;

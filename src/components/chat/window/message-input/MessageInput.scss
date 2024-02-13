@@ -1,6 +1,6 @@
 .chat-inputarea {
   display: flex;
-  grid-template-areas: "list input button";
+  grid-template-areas: 'list input button';
   grid-template-rows: 1fr;
   grid-template-columns: 120px max-content 80px;
   padding: 0 10px;
