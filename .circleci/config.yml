@@ -187,7 +187,6 @@ jobs:
     steps:
       - checkout
       - aws-cli/setup:
-          profile: default
       - *restore-cache
       - run:
           name: Upload build to S3
