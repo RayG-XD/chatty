@@ -187,7 +187,7 @@ jobs:
     steps:
       - checkout
       - aws-cli/setup:
-          profile: default
+          profile-name: default
       - *restore-cache
       - run:
           name: Upload build to S3
@@ -218,7 +218,7 @@ jobs:
       - attach_workspace:
           at: ./
       - aws-cli/setup:
-          profile: default
+          profile-name: default
       - run:
           name: Invalidate cloudfront distribution
           command: |
@@ -308,6 +308,7 @@ jobs:
           channel: 'chatty-app-builds'
           event: always
           template: basic_on_hold_1
+
 
 workflows:
   build_and_deploy:
