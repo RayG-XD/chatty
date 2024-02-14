@@ -186,7 +186,7 @@ jobs:
     executor: app-executor
     steps:
       - checkout
-      - aws-cli/setup@4.1.2:
+      - aws-cli/setup:
           profile-name: default
       - *restore-cache
       - run:
@@ -217,7 +217,7 @@ jobs:
       - checkout
       - attach_workspace:
           at: ./
-      - aws-cli/setup@4.1.2:
+      - aws-cli/setup:
           profile-name: default
       - run:
           name: Invalidate cloudfront distribution
