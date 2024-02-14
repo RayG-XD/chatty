@@ -5,8 +5,8 @@
   &-picker {
     display: grid;
     grid-template-areas:
-      'form'
-      'list';
+      "form"
+      "list";
     margin-top: 5px;
 
     &-form {
@@ -32,9 +32,7 @@
         border-radius: 10px;
         outline: medium none;
         overflow: visible;
-        transition:
-          border-color 0.15s ease-in-out,
-          box-shadow 0.15s ease-in-out;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
         &::placeholder {
           color: var(--gray-8);

@@ -1,7 +1,7 @@
 .comment-area {
   padding: 10px 0;
   display: grid;
-  grid-template-areas: 'like-icon comment-icon';
+  grid-template-areas: "like-icon comment-icon";
   grid-template-columns: max-content 1fr;
   grid-template-rows: 1fr;
   font-size: 14px;
@@ -57,7 +57,7 @@
 
     .likes-block {
       display: grid;
-      grid-template-areas: 'reactions-icon-display reactions-count';
+      grid-template-areas: "reactions-icon-display reactions-count";
       grid-template-columns: max-content 1fr;
       grid-template-rows: 1fr;
       cursor: pointer;

@@ -3,7 +3,7 @@
 
   &-container {
     display: grid;
-    grid-template-areas: 'side main';
+    grid-template-areas: "side main";
     grid-template-columns: 20vw 1fr;
     grid-template-rows: 1fr;
     column-gap: 16px;
@@ -101,7 +101,7 @@
 
           &-body {
             display: grid;
-            grid-template-areas: 'icon content';
+            grid-template-areas: "icon content";
             grid-template-columns: max-content 1fr;
             grid-template-rows: 1fr;
             margin-bottom: 15px;
@@ -112,7 +112,7 @@
                 padding-left: 0;
               }
 
-              div[contenteditable='true'] {
+              div[contenteditable="true"] {
                 border: 1px solid var(--white-13);
                 padding: 0 4px;
 
@@ -169,7 +169,7 @@
                 font-weight: bold;
               }
 
-              div[contenteditable='true'] {
+              div[contenteditable="true"] {
                 border: 1px solid var(--white-13);
                 padding: 0 4px;
                 overflow-x: scroll;
@@ -213,8 +213,8 @@
   .timeline-wrapper-container {
     display: grid;
     grid-template-areas:
-      'side'
-      'main';
+      "side"
+      "main";
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     row-gap: 20px;

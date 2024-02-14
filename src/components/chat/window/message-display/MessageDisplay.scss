@@ -23,8 +23,8 @@
       .message-content {
         display: grid;
         grid-template-areas:
-          'bubble'
-          'image';
+          "bubble"
+          "image";
         grid-template-columns: 1fr;
         grid-template-rows: max-content 1fr;
         position: relative;
@@ -83,8 +83,8 @@
       cursor: pointer;
       display: grid;
       grid-template-areas:
-        'reactions'
-        'chatBubble';
+        "reactions"
+        "chatBubble";
       grid-template-columns: 1fr;
       grid-template-rows: max-content 1fr;
 
@@ -218,9 +218,9 @@
       cursor: pointer;
       display: grid;
       grid-template-areas:
-        'rightReactions'
-        'rightChatBubble'
-        'rightContentBottom';
+        "rightReactions"
+        "rightChatBubble"
+        "rightContentBottom";
 
       .message-right-reactions-container {
         grid-area: rightReactions;
@@ -254,7 +254,7 @@
       .message-right-content-container-wrapper {
         grid-area: rightChatBubble;
         display: grid;
-        grid-template-areas: 'reactionIcon chatBubble';
+        grid-template-areas: "reactionIcon chatBubble";
         grid-template-columns: 1fr;
         grid-template-rows: max-content 1fr;
 
@@ -316,8 +316,8 @@
         justify-self: flex-end;
         display: grid;
         grid-template-areas:
-          'reaction'
-          'time';
+          "reaction"
+          "time";
         grid-template-columns: 1fr;
         grid-template-rows: max-content 1fr;
 

@@ -31,9 +31,7 @@
       border-radius: 10px;
       outline: medium none;
       overflow: visible;
-      transition:
-        border-color 0.15s ease-in-out,
-        box-shadow 0.15s ease-in-out;
+      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     }
 
     .search {
@@ -76,7 +74,7 @@
 }
 
 .giphy-search-container::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 4%;
   bottom: -9px;

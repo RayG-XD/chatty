@@ -45,7 +45,7 @@
 
   &-header {
     display: grid;
-    grid-template-areas: '. h2 button';
+    grid-template-areas: ". h2 button";
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     height: 40px;
@@ -242,8 +242,8 @@ hr {
   overflow-y: scroll;
   display: grid;
   grid-template-areas:
-    'input'
-    'image';
+    "input"
+    "image";
 
   .post-input {
     grid-area: input;
@@ -368,7 +368,7 @@ hr {
 
   &-header {
     display: grid;
-    grid-template-areas: 'button h2 .';
+    grid-template-areas: "button h2 .";
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     height: 40px;
