@@ -1,12 +1,12 @@
 orbs:
-  codecov: codecov/codecov@4.0.1
-  aws-cli: circleci/aws-cli@4.1.2
-  slack: circleci/slack@4.12.6
+  codecov: codecov/codecov@3.2.5
+  aws-cli: circleci/aws-cli@4.0.0
+  slack: circleci/slack@4.12.5
 version: 2.1
 executors:
   app-executor:
     docker:
-      - image: cimg/node:20.4.0
+      - image: cimg/node:18.17.1
       - image: 'cibuilds/base:latest'
     working_directory: ~/repo
   terraform-executor:
@@ -186,8 +186,8 @@ jobs:
     executor: app-executor
     steps:
       - checkout
-      - aws-cli/setup:
-          profile: default
+      - aws-cli/setup@4.1.2:
+          profile-name: default
       - *restore-cache
       - run:
           name: Upload build to S3
@@ -217,7 +217,7 @@ jobs:
       - checkout
       - attach_workspace:
           at: ./
-      - aws-cli/setup:
+      - aws-cli/setup@4.1.2:
           profile-name: default
       - run:
           name: Invalidate cloudfront distribution
