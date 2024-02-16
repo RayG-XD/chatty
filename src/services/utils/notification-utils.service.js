@@ -71,8 +71,8 @@ export class NotificationUtils {
         imgUrl: notification?.imgId
           ? Utils.appImageUrl(notification?.imgVersion, notification?.imgId)
           : notification?.gifUrl
-          ? notification?.gifUrl
-          : notification?.imgUrl,
+            ? notification?.gifUrl
+            : notification?.imgUrl,
         comment: notification?.comment,
         reaction: notification?.reaction,
         senderName: notification?.userFrom ? notification?.userFrom.username : notification?.username,
@@ -96,8 +96,8 @@ export class NotificationUtils {
         imgUrl: notification?.imgId
           ? Utils.appImageUrl(notification?.imgVersion, notification?.imgId)
           : notification?.gifUrl
-          ? notification?.gifUrl
-          : notification?.imgUrl,
+            ? notification?.gifUrl
+            : notification?.imgUrl,
         comment: notification?.comment,
         reaction: notification?.reaction,
         senderName: notification?.userFrom ? notification?.userFrom.username : notification?.username
